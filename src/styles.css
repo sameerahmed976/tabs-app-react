@@ -1,0 +1,147 @@
+:root {
+  --box-shadow: 0px 5px 2px rgb(102, 102, 102, 0.5);
+  --transition: all 0.8s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+  color: peru;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background: linear-gradient(180deg, purple, white);
+  font-weight: 900;
+  text-shadow: 1px 2px white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  max-width: 1170px;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 1rem;
+  min-height: 60vh;
+}
+
+.btn {
+  padding: 0.75rem 1.75rem;
+  border: none;
+  margin-right: 4rem;
+  margin-bottom: 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all 0.8s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn-active {
+  background-color: lightcoral;
+  color: white;
+  width: 90%;
+  outline-color: teal;
+}
+
+.button-groups {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.heading {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  padding: 0.4rem;
+  text-align: left;
+}
+.company {
+  display: inline;
+  padding: 0.2rem;
+  letter-spacing: 1.2px;
+  background-color: rgb(223, 223, 223, 0.3);
+  color: blue;
+  font-weight: 300;
+  box-shadow: 0px 5px 2px rgb(102, 102, 102, 0.5);
+}
+
+.dates {
+  margin-top: 0.3rem;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.arrow {
+  color: blue;
+  font-size: 1rem;
+}
+
+.text {
+  padding: 0.6rem;
+  font-size: 1rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.footer {
+  text-align: center;
+  margin: 1rem;
+}
+
+.footer-btn {
+  padding: 0.75rem 1.75rem;
+  border: none;
+  margin-right: 4rem;
+  margin-bottom: 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all 0.8s ease-in-out;
+  background: linear-gradient(160deg, lightblue, lightgreen);
+  color: white;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+.footer-btn:hover {
+  color: black;
+  background: linear-gradient(160deg, lightblue 50%, lightgreen 50%);
+}
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 400px 1fr;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+}
